@@ -140,5 +140,74 @@ def testShoppingCart(cart: ShoppingCartABC[Item], items: List[Item]) -> None:
         print(f"Remove {i.name} from cart")
         print_cart_test(items)
 ```
+### Test
 
+```
+Begin testShoppingCart test.
+
+cart = ShoppingCartList[Item]()
+
+Show me the cart.
+ShoppingCartList(cart=[])
+
+Is cart empty?
+True
+How many items in cart?
+0
+Is Apple in cart?
+False
+How many Apple in cart?
+0
+Is Mango in cart?
+False
+How many Mango in cart?
+0
+Is Chicken in cart?
+False
+How many Chicken in cart?
+0
+
+Add Apple in cart
+
+Show me the cart.
+ShoppingCartList(cart=[<item.Item object at 0x00000284A5C14B70>])
+
+Is cart empty?
+False
+How many items in cart?
+1
+Is Apple in cart?
+True
+How many Apple in cart?
+1
+Is Mango in cart?
+False
+How many Mango in cart?
+0
+Is Chicken in cart?
+False
+How many Chicken in cart?
+0
+
+Remove Apple from cart
+
+Is cart empty?
+True
+How many items in cart?
+0
+Is Apple in cart?
+False
+How many Apple in cart?
+0
+Is Mango in cart?
+False
+How many Mango in cart?
+0
+Is Chicken in cart?
+False
+How many Chicken in cart?
+0
+
+End ShoppingCartList test.
+```
 
